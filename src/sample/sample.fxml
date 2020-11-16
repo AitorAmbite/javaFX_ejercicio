@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="campo_usuario" text="Usuario" />
+      <TextField GridPane.columnIndex="1" />
+      <Label text="Contraseña" GridPane.rowIndex="1" />
+      <PasswordField fx:id="campo_contrasena" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label fx:id="ver_contrasena" onMouseEntered="#showContrasena_hover" onMouseExited="#showContrasena_hover_out" text="ver contraseña" GridPane.rowIndex="2" />
+      <Button fx:id="Boton_click" mnemonicParsing="false" onMouseClicked="#cambiarBoton" text="Clickame :D" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+   </children>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+</GridPane>
